@@ -1,0 +1,21 @@
+<h1>Welcome to Flatiron Elementary's Birthday Party Organizer!!</h1>
+<h2>Please log in or Sign up if new to register your student's party</h1>
+
+<nav>
+  <% if logged_in? %>
+
+    <a href="/students">View Students</a>
+    View My Students
+    <a href="/students/new">Add Student</a>
+    <a href="/parties">View Parties</a>
+    View My Parties
+    <a href="/parties/new">Add Party</a>
+
+  <% else %>
+
+    <a href="/signup">Sign Up</a>
+    <a href="/login">Log In</a>
+
+  <% end %>
+
+</nav>
