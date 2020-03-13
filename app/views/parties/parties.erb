@@ -1,0 +1,10 @@
+<h2> All Student Parties </h2>
+
+<% @parties.each do |party| %>
+  <div>
+    <%= party.name %>
+    <%= party.date %>
+    <%= party.venue %>
+    #edit button?
+  </div>
+<% end %>
